@@ -1,0 +1,53 @@
+/* 모두가 공통으로 import 해야하는 기초 세팅 파일 */
+
+/* S-Core Dream 시리즈 */
+@font-face {    /*S-Core Dream 3 Light*/
+    font-family: 'SCDream3'; 
+    src: url("../fonts/SCDream3.otf") format("opentype");
+}
+@font-face {    /*S-Core Dream 4 Regular*/
+    font-family: 'SCDream4';        
+    src: url("../fonts/SCDream4.otf") format("opentype");
+}
+@font-face {    /*S-Core Dream 5 Medium*/
+    font-family: 'SCDream5';        
+    src: url("../fonts/SCDream5.otf") format("opentype");
+}
+@font-face {    /*S-Core Dream 6 Bold*/
+    font-family: 'SCDream6';        
+    src: url("../fonts/SCDream6.otf") format("opentype");
+}
+
+/* 제목과 명대사 */
+@font-face {    /*Nanum GaRamYeonGgoc*/
+    font-family: 'GaRam';        
+    src: url("../fonts/나눔손글씨\ 가람연꽃.ttf") format("truetype");
+}
+@font-face {    /*116watermelon*/
+    font-family: 'Watermelon';        
+    src: url("../fonts/116watermelon.ttf") format("truetype");
+}
+
+/*결과화면 폰트*/
+@font-face {    /*Sokcho Bada Batang*/
+    font-family: 'Sokcho';        
+    src: url("../fonts/SokchoBadaBatang.otf") format("opentype");
+}
+@font-face {    /*Nanum URiDdarSonGeurSsi*/
+    font-family: 'URiDdar';        
+    src: url("../fonts/나눔손글씨\ 우리딸\ 손글씨.ttf") format("truetype");
+}
+
+:root{  /* 변수를 사용할 때는 var(--main-color); 이렇게 사용 */
+    --main-font: 'SCDream4';
+
+    --main-color1: #CC8686;
+    --main-color2: #8DCACE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* 폰트는 전역설정 완료 */
+    font-family: var(--main-font);
+}
