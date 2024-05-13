@@ -1,0 +1,84 @@
+body{
+    background-image: url(/img/background/나연.png);
+}
+
+div{
+    position: relative;
+    margin-left: 3%;
+}
+
+.bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg:after{
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.chat1{
+    background-color: rgba(255, 255, 255, 0);
+    border: solid white 2px;
+    border-radius: 10px;
+    width: 30%;
+    height: 80px;
+    z-index: 2;
+}
+
+.chat2{
+    font-family: 'SCDream6';
+    font-size: 100%;
+    color: white;
+    text-align: center;
+    background-color: rgba(204,134,134,0.8);
+    border-radius: 10px;
+    width: 30%;
+    height: 80px;
+    /* padding: 3px; */
+    left:8px; top: -90px; z-index: 1;
+}
+.name{
+    text-align: right;
+}
+
+.chat1{
+    background-color: rgba(255, 255, 255, 0);
+    border: solid white 2px;
+    border-radius: 10px;
+    width: 30%;
+    height: 80px;
+    z-index: 2;
+}
+
+.chat3{
+    font-family: 'SCDream6';
+    font-size: 100%;
+    color: white;
+    text-align: center;
+    background-color: rgba(141,202,206,0.8);
+    border-radius: 10px;
+    width: 30%;
+    height: 80px;
+    /* padding: 3px; */
+    right: -8px; top: -90px; z-index: 1;
+}
+
+.chat4{
+    font-family: 'SCDream6';
+    font-size: 100%;
+    color: white;
+    text-align: center;
+    border: solid white 3px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: 60%;
+    height: 55px;
+    /* padding: 3px; */
+    right: -8px; top: -90px; z-index: 1;
+}
