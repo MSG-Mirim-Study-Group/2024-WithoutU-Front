@@ -1,0 +1,37 @@
+/* body {
+    background-image: url('/image/typeResult/image 40.png');
+    background-size: cover;
+    background-position: center top;
+} */
+.container {
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+    background : url(/image/typeLine/image40.png);
+    background-size: cover;
+}
+.container-inner {
+    background-color: rgba(255, 255, 255, 0.6); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} 
+.saying{
+    position: absolute; 
+    top: 36%; 
+    right: 15%;
+
+    font-size: 70px;
+    font-family: 'GaRam';
+    font-weight: lighter;
+    color: #F1FEFF;
+    
+    text-shadow: -1px 0 #666666,	       
+                0 1px #666666,	       
+                1px 0 #666666,	       
+                0 -1px #666666,
+                2.3px 2px 1px #000000,
+                -2.2px -2px 4px #b0fefe;
+}
