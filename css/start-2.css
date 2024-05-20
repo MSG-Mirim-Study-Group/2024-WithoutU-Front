@@ -1,0 +1,66 @@
+body {
+    background-image: url('../image/start/start-1.jpg');
+    background-size : cover;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh
+}
+
+.MainTitle {
+    font-family: 'Watermelon';
+    font-size: 1300%;
+    color: #f4f4f4;
+    position: absolute;
+    top: 24%;  
+    left: 50%;
+    transform: translate(-50%, -45%);
+}
+
+.SubTitle {
+    position: absolute;
+    font-family: 'SCDream5';
+    font-size: 150%;
+    width: 25%;
+    height: 6%;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    background-color: #726D66;
+    color: #f4f4f4;
+    border: 3px solid #f4f4f4;
+    border-width: 3px;
+    border-radius: 50px;
+    outline: none;
+}
+
+.StartButton {
+    position: absolute;
+    top: 70%;
+    background-color: var(--main-color1);
+    background-color: rgba(204,134,134, 0.5 );
+}
+
+.ButtonGroup > Button {
+    text-align: center;
+    font-family: 'SCDream5';
+    left: 50%;
+    font-size: 150%;
+    width: 28%;
+    height: 7.5%;
+    color: #f4f4f4;
+    border: 3px solid #f4f4f4;
+    border-width: 3px;
+    border-radius: 20px;
+    outline: none;
+    transform: translate(-50%, -65%);
+}
+
+.AllButton {
+    position: absolute;
+    top: 80%;
+    background-color: rgba(141,202,206, 0.5 );
+    
+}
