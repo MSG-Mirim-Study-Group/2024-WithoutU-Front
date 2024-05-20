@@ -11,12 +11,12 @@ body {
 
 .MainTitle {
     font-family: 'Watermelon';
-    font-size: 2000%;
+    font-size: 1949%;
     color: #f4f4f4;
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -45%);
 }
 
 .SubTitle {
