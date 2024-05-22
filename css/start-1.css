@@ -98,11 +98,11 @@ main {
 
 .ment {
     position: relative;
-    top: 26%;
+    top: 28%;
     font-family: 'GaRam';
     font-size: 700%;
     color: white;
     text-align: center;
-    text-shadow: 2px 1px 1px black;
-
+    text-shadow: 5px 3px 2.5px black;
+    
 }
