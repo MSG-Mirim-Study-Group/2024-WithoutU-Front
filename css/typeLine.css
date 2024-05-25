@@ -1,14 +1,11 @@
-/* body {
-    background-image: url('/image/typeResult/image 40.png');
-    background-size: cover;
-    background-position: center top;
-} */
-.container {
+body {
+    background-image: url('/image/typeLine/image40.png');
+    background-size: 100%;
+    
     width: 100%;
     padding-top: 56.25%;
     position: relative;
-    background : url(/image/typeLine/image40.png);
-    background-size: cover;
+
 }
 .container-inner {
     background-color: rgba(255, 255, 255, 0.6); 
@@ -20,10 +17,10 @@
 } 
 .saying{
     position: absolute; 
-    top: 36%; 
-    right: 15%;
+    top: 36%;   
+    right: 20%;
 
-    font-size: 70px;
+    font-size: 725%;
     font-family: 'GaRam';
     font-weight: lighter;
     color: #F1FEFF;
