@@ -15,8 +15,8 @@ ol, ul, li{
 }
 
 body{
-    background-image: url(/image/gestbook/background/나연.png);
     -ms-overflow-style: none;
+    min-height: 100vh;
 }
 ::-webkit-scrollbar{
     display: none;
@@ -30,20 +30,24 @@ p{
 }
 
 .bg{
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-size: 100vw;
+    text-align: center;
+    position: absolute;
     background-attachment: fixed;
     backdrop-filter: blur(8px);
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
-.bg:after{
+.bg::after{
     content: "";
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.25);
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    transition: all 0.5s;
     z-index: -1;
 }
 
@@ -61,26 +65,24 @@ button{
     color: white;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 240%;
     margin: 2%;
     margin-left: 4.5%;
     margin-right: 4.5%;
     background-color: rgba(0, 0, 0, 0);
     border: 0;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(107deg) brightness(111%) contrast(101%);
 }
 button > p{
+    color: black;
     padding-left: 15px;
     padding-right: 15px;
 }
 button:hover{
-    color: rgba(204,134,134,0.85);
-    -webkit-filter: opacity(0.5) drop-shadow(0 0 0 #cc8686);
-    filter: opacity(0.5) drop-shadow(0 0 0 #cc8686);
+    filter: invert(71%) sepia(7%) saturate(1966%) hue-rotate(314deg) brightness(85%) contrast(85%);
 }
 button:active{
-    color: rgba(141,202,206,0.85);
-    -webkit-filter: opacity(0.5) drop-shadow(0 0 0 #8dcace);
-    filter: opacity(0.5) drop-shadow(0 0 0 #8dcace);
+    filter: invert(95%) sepia(3%) saturate(5582%) hue-rotate(147deg) brightness(90%) contrast(76%);
 }
 
 hr{
@@ -91,10 +93,14 @@ hr{
 }
 
 .chat_wrap{
-    width: auto;
+    display: block;
+    width: 100vw;
+    height: 35vw;
+    /* height: 100vh; */
+    background-attachment: scroll;
+    overflow: auto;
 }
 .chat{
-    margin: auto;
     border-radius: 9px;
     width: auto;
     height: auto;
@@ -113,33 +119,43 @@ hr{
     pointer-events: none;
 }
 .chat2{
-    display: inline-block;
-    background-color: rgba(204,134,134,0.85);
-    text-align: left;
+    display: grid;
+    background-color: rgba(204,134,134,0.85); 
+    vertical-align: top;
+    float: left;
     padding: 7px 12px;
     width: auto;
     max-width: 47%;
-    min-width: 13%;
+    min-width: 15%;
+    min-height: 9%;
     margin-top: 2%;
     margin-left: 7%;
+    margin-right: 46%;
     word-break: break-all;
 }
 .chat3{
-    display: inline-block;
+    display: grid;
     background-color: rgba(141,202,206,0.85);
-    text-align: right;
+    float: right;
     padding: 7px 12px;
     width: auto;
     max-width: 47%;
-    min-width: 13%;
+    min-width: 15%;
+    min-height: 9%;
     margin-top: 2%;
     margin-right: 7%;
+    margin-left: 46%;
     word-break: break-all;
+}
+
+span{
+    color: white;
 }
 
 .input-div{
     display: inline-block;
     position: sticky;
+    top: 0;
 	bottom: 10%;
 	text-align: center;
     width: 100%;
@@ -155,14 +171,14 @@ hr{
     padding-top: 0.5%;
     padding-bottom: 0.5%;
 
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.5);
     border: solid white 3px;
 	border-radius: 10px;
 
     color: white;
 	font-size: 180%;
     line-height: 200%;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.45);
     
     resize: none;
     outline: none;
@@ -172,7 +188,7 @@ hr{
 .input-div > textarea::placeholder{
     font-family: SCDream3;
     color: white;
-    text-shadow: 1px 2.5px 1.5px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.45);
 }
 
 .input-div > input{
@@ -183,13 +199,22 @@ hr{
     color: white;
 	font-size: 180%;
     line-height: 485%;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.45);
+    /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(107deg) brightness(111%) contrast(101%); */
     margin-top: 4%;
+}
+input:hover{
+    color: black(204,134,134,0.85);
+    /* filter: invert(71%) sepia(7%) saturate(1966%) hue-rotate(314deg) brightness(85%) contrast(85%); */
+}
+input:active{
+    color: black(204,134,134,0.85);
+    /* filter: invert(95%) sepia(3%) saturate(5582%) hue-rotate(147deg) brightness(90%) contrast(76%); */
 }
 
 
 .text{
-    text-shadow: 1px 1.5px 1px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.45);
     font-family: 'SCDream4';
     width: auto;
     font-size: 140%;
@@ -199,9 +224,10 @@ hr{
 .from{
     font-size: 90%;
     font-family: 'SCDream4';
-    text-shadow: 1px 2.5px 1.5px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.45);
     text-align: right;
-    margin-right: 2%;
+    margin-top: 1%;
+    margin-right: 2.5%;
     margin-bottom: 1%;
 }
 
