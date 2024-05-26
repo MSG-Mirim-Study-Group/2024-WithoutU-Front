@@ -15,6 +15,14 @@ body {
     height: 100%;
     overflow: hidden;
 }
+.container-inner {
+    opacity: 0;
+    /* 트랜지션 설정 */
+    transition: opacity 1s ease-in;
+}
+.container-inner.fade-in {
+    opacity: 1;
+}
 
 /*  header  */
 .title {
@@ -49,7 +57,11 @@ body {
     text-shadow: 
     0.5px 2px 4px rgba(0, 0, 0, 0.25);
 }
-
+.hashtag .highlight {
+    /* position: relative; */
+    color: #ff6666;
+    font-family: inherit;
+}
 /*  section  */
 .content {
     background-color: rgba(255, 255, 255, 0.2);
@@ -80,6 +92,22 @@ footer {
     position: relative;
     bottom: 0;
 }
+.button-inner {
+    position: absolute;
+    padding: 40px;
+    width: 320px;
+    margin-top: 38.5%;
+    margin-left: 26.7%;
+    background-color: rgba(204, 134, 134, 0.7);
+    border-radius: 20px;
+}
+.typing2 {
+    margin-top: -3.76%;
+    width: 340px;
+    margin-left: 51.6%;
+    background-color: rgba(141, 202, 206, 0.7);
+}
+
 .type {
     position: relative;
     background-color: rgba(0, 0, 0, 0);
@@ -102,5 +130,7 @@ footer {
 }
 .typing {
     position: relative;
-    margin-left: 40%;
+    margin-left: 3.8%;
 }
+
+
