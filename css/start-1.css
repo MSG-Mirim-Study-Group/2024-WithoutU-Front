@@ -106,3 +106,89 @@ main {
     text-shadow: 5px 3px 2.5px black;
     
 }
+
+hr {
+    position: absolute;
+    width: 95%;
+    border: solid white 2px;
+    margin-left: 2.5%;
+}
+
+.line1 {
+    top: 10%;
+}
+
+.line2 {
+    bottom: 10%;
+}
+
+
+.input-div{
+    display: inline-block;
+	bottom: 10%;
+    width: 80%;
+}
+.input-div > .input-name {
+
+    position: absolute;
+    width: 50%; 
+    height: 13%;
+    left: 20%;
+    top: 45%;
+    
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid white 3px;
+	border-radius: 10px;
+
+    color: white;
+	font-size: 180%;
+    line-height: 200%;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.45);
+    
+}
+.input-div > input::placeholder{
+    text-align: center;
+    font-family: 'SCDream3';
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.45);
+}
+
+.input-div > button{
+    position: absolute;
+    top: 45%;
+    right: 23%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: solid white 3px;
+	border-radius: 10px;
+    width: 6%;
+    color: white;
+	font-size: 180%;
+    line-height: 485%;
+}
+
+#ment-group {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: flex-end;
+    animation: fadein 5s ease 5s;
+    -webkit-animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 2;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 2;
+    }
+}
