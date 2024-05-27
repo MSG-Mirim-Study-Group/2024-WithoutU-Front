@@ -1,20 +1,19 @@
 body {
-    background-image: url('../image/question/image1.png');
+    background-size: cover;
     background-attachment: fixed;
-    height: auto;
+    height: 1080px;
 }
 main {
     width: 100%;
-    height: 900px;
+    height: 100%;
     background-color: rgba(197, 197, 197, 0.85);
 }
 p, a {
     text-align: center;
     color: #fff;
-    font-size: 1.1rem;
 }
 
-/* header */
+/* header progress */
 .header {
    padding: 4rem 0;
 }
@@ -29,38 +28,66 @@ p, a {
     height: 0.15rem;
 }
 
-/* main */
-.question-box {
-    width: 40%;     height: auto;
-    border: #fff solid;
-    border-radius: 1rem;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: 2rem auto;
+/* main body */
+.game-body {
+    width: 45%;
+    height: auto;
+    margin: 1rem auto 0;
+    padding: 3rem 0 3rem;
 }
-.question-box p {
-    padding: 3rem 0;
-}
-
-/* choice */
-.choice { 
-    width: auto;
-    margin: auto;
-    padding: 3rem;
-}
-.choice-box {
-    width: 40%;
-    justify-content: center;
-    margin: 0 auto 4rem;
+/* main body - title */
+.question-title {
+    height: 15rem;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: #fff solid;
+    border-radius: 1.4rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 7rem;
+}
+.question-title p {
+    font-size: 1.7rem;
+}
+/* main body - option */
+.question-option {
+    display: grid;
+    grid-template-columns: 1fr 9fr;     /* fr : 비율 */
+    grid-template-rows: 8fr 1fr;
     border: none;
     background: none;
+    margin: 4rem 0 4rem;
 }
-.choice-box-main {
-    display: flex;
-    flex-direction: column;
+.option-header {
+    height: 3.3rem;
+    align-self: self-end;
+    grid-row: 1 / span 2;
 }
-.choice-box-main a {
-    padding: 0.4rem 0 0.6rem;
+.option-content {
+    font-size: 1.55rem;
+    align-self: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
-
+.option-line {
+    width: 100%;
+    align-self: self-end;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+/* main body - option - hover */
+.question-option:hover .option-header[alt*="B"] {
+    content: url('../image/question/Group 33.png'); 
+}
+.question-option:hover .option-line[alt*="B"] {
+    content: url('../image/question/Line 3.png'); 
+}
+.question-option:hover .option-header[alt*="R"] {
+    content: url('../image/question/Group 34.png'); 
+}
+.question-option:hover .option-line[alt*="R"] {
+    content: url('../image/question/Line 13.png'); 
+}
+.question-option:hover .option-content {
+    color: #9f9f9f;
+}

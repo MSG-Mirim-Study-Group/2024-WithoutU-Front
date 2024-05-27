@@ -1,29 +1,32 @@
-/* body {
-    background-image: url('/image/typeResult/image 40.png');
-    background-size: cover;
-    background-position: center top;
-} */
-.container {
+body {
+    background-image: url('/image/typeLine/image40.png');
+    background-size: 100%;
+    
     width: 100%;
     padding-top: 56.25%;
     position: relative;
-    background : url(/image/typeLine/image40.png);
-    background-size: cover;
+
 }
-.container-inner {
+
+/*  main    */
+.container {
     background-color: rgba(255, 255, 255, 0.6); 
+    backdrop-filter: blur(5px);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-} 
+}
+
 .saying{
     position: absolute; 
-    top: 36%; 
-    right: 15%;
+    top: 36%;   
+    right: 20%;
+    opacity: 0;
+    transition: opacity 2s ease-in;
 
-    font-size: 70px;
+    font-size: 725%;
     font-family: 'GaRam';
     font-weight: lighter;
     color: #F1FEFF;
@@ -34,4 +37,7 @@
                 0 -1px #666666,
                 2.3px 2px 1px #000000,
                 -2.2px -2px 4px #b0fefe;
+}
+.saying.fade-in {
+    opacity: 1;
 }

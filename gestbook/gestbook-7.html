@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/chat.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>방명록-주원</title>
+    <style>
+        body{
+            background-image: url(../image/gestbook/background/주원.png);
+        }
+    </style>
+</head>
+<body class="bg" >
+    <div class="bg"></div>
+    <header>
+        <button class="btn" style="float: left;" onclick="location.href='../result-7.html'">
+            <img src="../image/gestbook/Arrow 1.png" alt="arrow1"">
+            <p>이전화면</p>
+        </button>
+        <button class="btn" style="float: right;" onclick="location.href='../start-1.html'"">
+            <p>시작화면</p>
+            <img src="../image/gestbook/Arrow 2.png" alt="arrow2">
+        </button>
+        <hr />
+    </header>
+    <div class="chat_wrap">
+        <!-- js -->
+    </div>
+    <div class="input-div">
+        <textarea name="gestbook" placeholder="방명록을 작성해주세요"></textarea> <!--onInput="this.parentNode.dataset.replicatedValue = this.value"!-->
+        <input type="button" value="입력">
+        <div class="tag">
+            <p class="name">주원</p>
+            <p class="type">유형</p>
+        </div>
+        <hr />
+    </div>
+    <script src="../js/gestbook.js">
+        <div class="chat format">
+            <ul>
+                <li>
+                    <div class="chat chat2">
+                        <p class="text"></p>
+                        <p class="from"></p>
+                    </div>
+                    <div class="chat chat3">
+                        <p class="text"></p>
+                        <p class="from"></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </script>
+</body>
+</html>
