@@ -1,0 +1,107 @@
+body {
+    background-image: url('../image/AllofType/All.png');
+    background-size: cover;
+}
+
+main {
+    background-color: rgba(197, 197, 197, 0.7);
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../image/AllofType/AllType-line.png');
+    background-size: cover;
+}
+
+input {
+    border: none;
+    width: 8%;
+    height: 11%;
+    cursor: pointer;
+}
+
+button {
+    color: white;
+    border: none;
+    width: 8%;
+    height: 11%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    position: absolute;
+    bottom: 20%;
+    font-size: 140%;
+}
+
+.Gyumin {
+    position: absolute;
+    background: url('../image/AllofType/letter-m.png') no-repeat;
+    transform:rotate(20deg);
+    bottom: 120px;
+    left: 100px;
+}
+
+.haeun {
+    position: absolute;
+    background: url('../image/AllofType/letter-w.png') no-repeat;
+    transform:rotate(-10deg);
+    bottom: 430px;
+    left: 330px;
+}
+
+.huido {
+    position: absolute;
+    background: url('../image/AllofType/letter-m.png') no-repeat;
+    transform:rotate(-30deg);
+    top: 230px;
+    left: 490px;
+}
+
+.nayeon {
+    position: absolute;
+    background: url('../image/AllofType/letter-w.png') no-repeat;
+    transform:rotate(-30deg);
+    top: 350px;
+    left: 800px;
+}
+
+.dongjin {
+    position: absolute;
+    background: url('../image/AllofType/letter-m.png') no-repeat;
+    bottom: 475px;
+    right : 670px;
+}
+
+.dahye {
+    position: absolute;
+    background: url('../image/AllofType/letter-w.png') no-repeat;
+    transform:rotate(10deg);
+    top: 230px;
+    right: 500px;
+}
+
+.juwon {
+    position: absolute;
+    background: url('../image/AllofType/letter-m.png') no-repeat;
+    transform:rotate(20deg);
+    top: 330px;
+    right : 190px;
+}
+
+.seokyong {
+    position: absolute;
+    background: url('../image/AllofType/letter-w.png') no-repeat;
+    transform:rotate(20deg);
+    top: 40px;
+    right: 100px;
+}
+
+.content {
+    position: absolute;
+    top: 60%;
+}

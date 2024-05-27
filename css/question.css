@@ -75,3 +75,19 @@ p, a {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
+/* main body - option - hover */
+.question-option:hover .option-header[alt*="B"] {
+    content: url('../image/question/Group 33.png'); 
+}
+.question-option:hover .option-line[alt*="B"] {
+    content: url('../image/question/Line 3.png'); 
+}
+.question-option:hover .option-header[alt*="R"] {
+    content: url('../image/question/Group 34.png'); 
+}
+.question-option:hover .option-line[alt*="R"] {
+    content: url('../image/question/Line 13.png'); 
+}
+.question-option:hover .option-content {
+    color: #9f9f9f;
+}
