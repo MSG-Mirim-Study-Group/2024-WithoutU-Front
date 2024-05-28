@@ -13,6 +13,14 @@
     </style>
 </head>
 <body>
+    <!--Script-->
+    <script src="../js/question/storage.js"></script>
+    <script>
+        // localStorage를 초기화하여 저장된 모든 데이터 제거
+        localStorage.clear();
+    </script>
+
+    <!--Html-->
     <main>
         <section class="header">
             <div class="progress">
@@ -25,64 +33,27 @@
                     당신은 N번째 입주자입니다.<br>
                     당신이 숙소에 도착해서 하는 일은?</p>
             </div>
-            <button class="question-option" onclick="updateVariables('dj', 'sk');">
+            <button class="question-option" onclick="updateVariables('question2.html', 'dj', 'sk');">
                     <img class="option-header" src="../image/question/Group 29.png" alt="B">
                     <a class="option-content">입주자들과 사소한 대화를 나누지만 아직 낯을 가려 대답만 한다.</a>
                     <img class="option-line" src="../image/question/Line 2.png" alt="B">
             </button>
-            <button class="question-option" onclick="updateVariables('hd', 'hy');">
+            <button class="question-option" onclick="updateVariables('question2.html', 'hd', 'hy');">
                 <img class="option-header" src="../image/question/Group 30.png" alt="R">
                 <a class="option-content">다른 입주자와 같이 방구경을 하러 간다.</a>
                 <img class="option-line" src="../image/question/Line 12.png" alt="R">
             </button>
-            <button class="question-option" onclick="updateVariables('ny');">
+            <button class="question-option" onclick="updateVariables('question2.html', 'ny');">
                 <img class="option-header" src="../image/question/Group 31.png" alt="B">
                 <a class="option-content">집주인처럼 혼자서도 숙소를 자연스럽게 돌아다닌다.</a>
                 <img class="option-line" src="../image/question/Line 2.png" alt="B">
             </button>
-            <button class="question-option" onclick="updateVariables('jy', 'dh', 'gm');">
+            <button class="question-option" onclick="updateVariables('question2.html', 'jy', 'dh', 'gm');">
                 <img class="option-header" src="../image/question/Group 32.png" alt="R">
                 <a class="option-content">조용한 분위기에서 벗어나기 위해 다른 입주자에게 먼저 말을 건다.</a>
                 <img class="option-line" src="../image/question/Line 12.png" alt="R">
-            </button>
+            </button>   
         </section>
     </main>
-
-    <!--script-->
-    <script src="../js/question/storage.js"></script>
-    <script>
-        // localStorage를 초기화하여 저장된 모든 데이터 제거
-        localStorage.clear();
-
-        function updateVariables(var1, var2, var3, var4, var5) {
-            if (var1 === "dj" && var2 === "sk") {
-                dj++;
-                sk++;
-            } else if (var1 === "hd" && var2=== "hy") {
-                hd++;
-                hy++;
-            } else if (var1 === "ny") {
-                ny++;
-            } else if (var1 === "jy" && var2 === "dh" && var3 === "gm") {
-                jy++;
-                dh++;
-                gm++;
-            } 
-
-            // 변수 값 저장
-            localStorage.setItem("dj", dj);
-            localStorage.setItem("hd", hd);
-            localStorage.setItem("gm", gm);
-            localStorage.setItem("jy", jy);
-            localStorage.setItem("dh", dh);
-            localStorage.setItem("ny", ny);
-            localStorage.setItem("hy", hy);
-            localStorage.setItem("sk", sk);
-
-            // 페이지 전환
-            //window.location.href = "./question2.html";
-        }
-    </script>
-    <script src="../js/question/ItemTest.js"></script>
 </body>
 </html>
