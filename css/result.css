@@ -20,30 +20,16 @@
     /*  scrollbar   */
     .container::-webkit-scrollbar {
         display: none;  /*스크롤 기능 없애기 */
-    }   
-    /* .container::-webkit-scrollbar {
-        width: 8px;
-    }
-    
-    .container::-webkit-scrollbar-thumb {
-        height: 30%; 
-        background-color: var(--main-color1); 스크롤바의 색상    
-        border-radius: 10px;
-    }
-    
-    .container::-webkit-scrollbar-track {
-        background: rgba( 255, 255, 255, 0.5); 스크롤바 뒷 배경 색상
-    }*/
-
+    }  
     .container-inner {
-        opacity: 0;
+        opacity: 1;
         transition: opacity 1s ease-in;
         margin-top: 124px; 
         margin-bottom: 20px; 
     }
-    .container-inner.fade-in {
+    /* .container-inner.fade-in {
         opacity: 1;
-    }
+    } */
     .contaier-inner {
         width: 500px;
         height: 500px;
@@ -81,10 +67,7 @@
         text-shadow: 
                 0.5px 2px 4px rgba(0, 0, 0, 0.25);
     }
-    /*  유형별  */
-    .Nayeon {
-        right: -25%;
-    }
+
     .hashtag .highlight {
         color: #ff6666;
         font-family: inherit;
