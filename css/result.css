@@ -38,7 +38,7 @@
     .container-inner {
         opacity: 0;
         transition: opacity 1s ease-in;
-        margin-top: 130px; 
+        margin-top: 124px; 
         margin-bottom: 20px; 
     }
     .container-inner.fade-in {
@@ -82,9 +82,6 @@
                 0.5px 2px 4px rgba(0, 0, 0, 0.25);
     }
     /*  유형별  */
-    .Heedoo {
-        right: -24%;
-    }
     .Nayeon {
         right: -25%;
     }
@@ -99,7 +96,7 @@
         position: absolute;
         margin-top: 422px;
         left: 50%;
-        padding: 20px 100px 20px 100px;
+        padding: 20px 130px 20px 130px;
         transform: translate(-50%, -50%);
 
         border-radius: 20px;
@@ -165,6 +162,7 @@
     }
     .typing {
         background-color: rgba(141,202,206,0.85);
+        margin-bottom: 144px;
     }
     .total:hover {
         background-color: rgba(184, 121, 121, 0.85);
