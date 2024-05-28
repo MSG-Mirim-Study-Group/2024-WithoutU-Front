@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 3초 후에 리디렉션
     setTimeout(function() {
-        window.location.href = "result.html";
+        window.location.href = "/result/result1.html";
     }, 3000);
 });
 

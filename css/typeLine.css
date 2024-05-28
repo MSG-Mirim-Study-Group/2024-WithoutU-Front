@@ -21,10 +21,11 @@ body {
 
 .saying{
     position: absolute; 
-    top: 36%;   
+    top: 44%;   
     right: 20%;
     opacity: 0;
     transition: opacity 2s ease-in;
+    /* transform: translate(-50%, -50%); */
 
     font-size: 725%;
     font-family: 'GaRam';
@@ -40,4 +41,29 @@ body {
 }
 .saying.fade-in {
     opacity: 1;
+}
+
+/*  유형    */
+.Gyumin {
+    top : 36%;
+}
+.Haeeun {
+    right: 5.5%;
+}
+.Heedoo {
+    right: 28%;
+}
+
+.Dongjin {
+    right: 15%;   
+}
+.Dahye {
+    right: 27%;
+}
+.Juwon {
+    right: 23%;
+    top: 36%;
+}
+.Seogyeong {
+    right: 37%;
 }
