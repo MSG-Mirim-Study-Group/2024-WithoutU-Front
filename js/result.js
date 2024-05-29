@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector('.container-inner').classList.add("fade-in");
     }, );
 });
-function alloftype()  {
-    window.open('/All-of-Type.html');
-  }
+
+var alltype = '/All-of-Type.html';
+
+function alloftype() {
+    window.location.href = alltype; 
+} 
