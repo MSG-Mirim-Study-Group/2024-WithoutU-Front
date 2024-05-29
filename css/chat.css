@@ -1,6 +1,4 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 a{
@@ -31,7 +29,6 @@ p{
 
 .bg{
     background-size: 100vw;
-    text-align: center;
     position: absolute;
     background-attachment: fixed;
     backdrop-filter: blur(8px);
@@ -84,6 +81,10 @@ button:hover{
 button:active{
     filter: invert(95%) sepia(3%) saturate(5582%) hue-rotate(147deg) brightness(90%) contrast(76%);
 }
+.btn{
+    margin-left: 5%;
+    margin-left: 5%;
+}
 
 hr{
     width: 95%;
@@ -95,7 +96,7 @@ hr{
 .chat_wrap{
     display: inline-block;
     width: 100vw;
-    height: 35vw;
+    height: 63vh;
     background-attachment: scroll;
     overflow: auto;
 }
@@ -103,7 +104,6 @@ hr{
     border-radius: 9px;
     width: auto;
     height: auto;
-    overflow-y: auto;
 }
 .chat::before{
     content: '';
@@ -118,7 +118,7 @@ hr{
     box-sizing: border-box;
     pointer-events: none;
 }
-.chat.red{
+.red{
     display: grid;
     background-color: rgba(204,134,134,0.85); 
     vertical-align: top;
@@ -133,7 +133,7 @@ hr{
     margin-right: 46%;
     word-break: break-all;
 }
-.chat.blue{
+.blue{
     display: grid;
     background-color: rgba(141,202,206,0.85);
     float: right;
@@ -146,6 +146,10 @@ hr{
     margin-right: 7%;
     margin-left: 46%;
     word-break: break-all;
+}
+
+span{
+    color: white;
 }
 
 .input-div{
@@ -216,7 +220,8 @@ hr{
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
-.chat.red.text{
+
+.text{
     color: white;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.45);
     font-family: 'SCDream4';
@@ -225,26 +230,7 @@ hr{
     line-height: 130%;
     text-align: center;
 }
-.chat.blue.text{
-    color: white;
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.45);
-    font-family: 'SCDream4';
-    width: auto;
-    font-size: 140%;
-    line-height: 130%;
-    text-align: center;
-}
-.chat.red.from{
-    color: white;
-    font-size: 90%;
-    font-family: 'SCDream4';
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.45);
-    text-align: right;
-    margin-top: 1%;
-    margin-right: 2.5%;
-    margin-bottom: 1%;
-}
-.chat.blue.from{
+.from{
     color: white;
     font-size: 90%;
     font-family: 'SCDream4';

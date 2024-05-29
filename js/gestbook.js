@@ -1,54 +1,38 @@
-// let messageCount = 0;
-
-// document.getElementById('send').addEventListener('click', sendMessage);
-
-// function sendMessage() {
-//     const nameInput = document.getElementById('name-input');
-//     const chatInput = document.getElementById('chat-input');
-//     const chatWrap = document.getElementById('chat-wrap');
-    
-//     const from = nameInput.value.trim();
-//     const message = chatInput.value.trim();
-
-//     if (from && message) {
-//         const messageElement = document.createElement('div');
-//         const senderElement = document.createElement('p');
-        
-//         senderElement.textContent = from;
-//         senderElement.className = 'from';
-        
-//         messageElement.textContent = message;
-//         messageElement.insertBefore(from, messageElement.firstChild);
-
-//         const messageClass = messageCount % 2 === 0 ? 'chat red text' : 'chat blue text';
-//         messageElement.className = 'message ' + messageClass;
-
-//         chatWrap.appendChild(messageElement);
-//         chatWrap.scrollTop = chatWrap.scrollHeight;
-
-//         chatInput.value = '';
-//         messageCount++;
-//     }
-// }
+function inputValueChange(){
+    let inputName = document.getElementById('input-name').value;
+    console.log(inputName);
+    localStorage.setItem("input-name", inputName);
+}
 
 let messageCount = 0;
 
 document.getElementById('send').addEventListener('click', sendMessage);
 
 function sendMessage() {
+    const NameInput = localStorage.getItem('input-name');
     const chatInput = document.getElementById('chat-input');
     const chatWrap = document.getElementById('chat_wrap');
+    
+    const from = "from. " + NameInput.trim(); // 이름 앞에 "from." 추가
     const message = chatInput.value.trim();
 
-    if (message) {
+    if (from && message) {
         const messageElement = document.createElement('div');
-        messageElement.textContent = message;
+        const fromElement = document.createElement('p');
+        const textElement = document.createElement('p');
+        
+        fromElement.textContent = from;
+        fromElement.className = 'from';
+        
+        textElement.textContent = message;
+        textElement.className = 'text';
 
-        // 홀수 메시지는 received, 짝수 메시지는 sent 클래스를 추가합니다.
         const messageClass = messageCount % 2 === 0 ? 'chat red text' : 'chat blue text';
-        
-        messageElement.className = 'message ' + messageClass;
-        
+        messageElement.className = messageClass;
+
+        messageElement.appendChild(textElement);
+        messageElement.appendChild(fromElement);
+
         chatWrap.appendChild(messageElement);
         chatWrap.scrollTop = chatWrap.scrollHeight;
 
