@@ -6,7 +6,8 @@ body {
 main {
     width: 100%;
     height: 100%;
-    background-color: rgba(197, 197, 197, 0.85);
+    background-color: rgba(199, 199, 199, 0.8);
+    backdrop-filter: blur(3px);
 }
 p, a {
     text-align: center;

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input-name</title>
+    <!--<link rel="shortcut icon" type="image/x-icon" href="./image/logo.png" />-->
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/start-1.css">
+</head>
+<body>
+    <main>
+        <div class="header"> 
+                <hr class="line1">
+                <div class = "input-div">
+                    <input type="text" id="input-name" class="input-name" onchange="inputValueChange()" placeholder="방명록에 남길 당신의 이름을 작성해주세요"/>
+                    <button id="submit" onclick="location.href='start-3.html'">입력</button>
+                </div>
+                <hr class="line2"/>
+        </div>
+    </main>
+    <script>
+        function inputValueChange(){
+                var inputName = document.getElementById('input-name').value;
+                console.log(inputName);
+        }   
+    </script>
+</body>
+</html>

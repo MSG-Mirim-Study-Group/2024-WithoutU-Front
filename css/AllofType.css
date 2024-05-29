@@ -1,107 +1,166 @@
 body {
-    background-image: url('../image/AllofType/All.png');
+    background-image: url('../image/AllofType/back-2.png');
     background-size: cover;
 }
 
 main {
-    background-color: rgba(197, 197, 197, 0.7);
+    background-color: rgba(197, 197, 197, 0.6);
+}
+
+img{
+    vertical-align: top;
+}
+
+.line {
+    width: 100%;
+}
+
+.line1 {
+    width: 100%;
 }
 
 .header {
     position: relative;
     width: 100%;
-    height: 100vh;
-    background-image: url('../image/AllofType/AllType-line.png');
-    background-size: cover;
+    height: 100vh
 }
 
-input {
-    border: none;
-    width: 8%;
-    height: 11%;
-    cursor: pointer;
-}
-
-button {
-    color: white;
-    border: none;
-    width: 8%;
-    height: 11%;
-    cursor: pointer;
+.btn{
     display: flex;
+    color: white;
     justify-content: center;
+    align-items: center;
+    font-size: 240%;
+    margin: 2%;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(107deg) brightness(111%) contrast(101%);
+}
+
+p {
+    color: #f4f4f4;
+    font-family: 'SCDream6';
+}
+
+button > p{
+    color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+hr{
+    width: 95%;
+    border: solid white 2px;
+}
+
+.first-hr {
+    margin-top: 1%;
+    margin-left: 2.5%;
+}
+
+.last-hr {
+    margin-top: 10%;
+    margin-left: 2.5%;
 }
 
 .text {
     position: absolute;
-    bottom: 20%;
-    font-size: 140%;
+    bottom: 10%;
+    font-size: 200%;
+    color: #f4f4f4;
+    left: 34%;
+}
+
+.line-group {
+    height: 30%;
 }
 
 .Gyumin {
     position: absolute;
-    background: url('../image/AllofType/letter-m.png') no-repeat;
-    transform:rotate(20deg);
-    bottom: 120px;
-    left: 100px;
-}
-
-.haeun {
-    position: absolute;
-    background: url('../image/AllofType/letter-w.png') no-repeat;
-    transform:rotate(-10deg);
-    bottom: 430px;
-    left: 330px;
-}
-
-.huido {
-    position: absolute;
-    background: url('../image/AllofType/letter-m.png') no-repeat;
-    transform:rotate(-30deg);
-    top: 230px;
-    left: 490px;
-}
-
-.nayeon {
-    position: absolute;
-    background: url('../image/AllofType/letter-w.png') no-repeat;
-    transform:rotate(-30deg);
-    top: 350px;
-    left: 800px;
-}
-
-.dongjin {
-    position: absolute;
-    background: url('../image/AllofType/letter-m.png') no-repeat;
-    bottom: 475px;
-    right : 670px;
-}
-
-.dahye {
-    position: absolute;
-    background: url('../image/AllofType/letter-w.png') no-repeat;
+    background: url('../image/AllofType/m-letter.png') no-repeat;
     transform:rotate(10deg);
-    top: 230px;
+    top: 300px;
+    left: 300px;
+    height: 239px;
+    width: 205px;
+    border: none;
+}
+
+.Dongjin {
+    position: absolute;
+    background: url('../image/AllofType/m-letter.png') no-repeat;
+    transform:rotate(-5deg);
+    top: 320px;
+    left: 600px;
+    height: 239px;
+    width: 205px;
+    border: none;
+}
+
+.Huido {
+    position: absolute;
+    background: url('../image/AllofType/m-letter.png') no-repeat;
+    transform:rotate(-5deg);
+    top: 310px;
+    left: 900px;
+    height: 239px;
+    width: 205px;
+    border: none;
+}
+
+.Juwon {
+    position: absolute;
+    background: url('../image/AllofType/m-letter.png') no-repeat;
+    transform:rotate(-5deg);
+    top: 280px;
     right: 500px;
+    height: 239px;
+    width: 205px;
+    border: none;
 }
 
-.juwon {
+.Dahye {
     position: absolute;
-    background: url('../image/AllofType/letter-m.png') no-repeat;
-    transform:rotate(20deg);
-    top: 330px;
-    right : 190px;
+    background: url('../image/AllofType/w-letter.png') no-repeat;
+    transform:rotate(0deg);
+    bottom: 215px;
+    left: 300px;
+    height: 239px;
+    width: 205px;
+    border: none;
 }
 
-.seokyong {
+.Nayeon {
     position: absolute;
-    background: url('../image/AllofType/letter-w.png') no-repeat;
-    transform:rotate(20deg);
-    top: 40px;
-    right: 100px;
+    background: url('../image/AllofType/w-letter.png') no-repeat;
+    transform:rotate(5deg);
+    bottom: 190px;
+    left: 620px;
+    height: 239px;
+    width: 205px;
+    border: none;
 }
 
-.content {
+.Seokyong {
     position: absolute;
-    top: 60%;
+    background: url('../image/AllofType/w-letter.png') no-repeat;
+    transform:rotate(-5deg);
+    bottom: 210px;
+    left: 930px;
+    height: 239px;
+    width: 205px;
+    border: none;
+}
+
+.Haeun {
+    position: absolute;
+    background: url('../image/AllofType/w-letter.png') no-repeat;
+    transform:rotate(-5deg);
+    bottom: 250px;
+    right: 440px;
+    height: 239px;
+    width: 205px;
+    border: none;
 }
