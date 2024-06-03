@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url('../image/AllofType/loading-page.png');
+    background-size: cover;  
+}
+
+
+.loading {
+    background-color: rgba(238, 238, 238, 0.6); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1920px;
+    height: 1080px;
+}
+
+.loading-title::before {
+    content: "";
+    position: absolute;
+    animation: animate 3s steps(5) infinite;
+}
+
+.loading-title {
+    font-family: 'GaRam'; 
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 120px;
+    font-weight: 600;
+    line-height: 1.3333;
+    color: white;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.progress-bar {
+    position: relative;
+    width: 800px;
+    height: 12px;
+    border-radius: 100px;
+    background-color: rgb(167,167,167);
+    overflow: hidden;
+}
+
+.progress-bar-gauge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 10px;
+    border-radius: 80px;
+    background-color: #C01818;
+    animation-name: loading-bar;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+
+@keyframes loading-bar {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+    80% {
+        width: 100%;
+        opacity: 1;
+    }
+    100% {
+        width: 100%;
+        opacity: 0;
+    }
+}
