@@ -96,7 +96,7 @@ hr{
 .chat_wrap{
     display: inline-block;
     width: 100vw;
-    height: 63vh;
+    height: 58vh;
     background-attachment: scroll;
     overflow: auto;
 }
@@ -172,7 +172,7 @@ span{
     padding-top: 0.5%;
     padding-bottom: 0.5%;
 
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     border: solid black 3px;
 	border-radius: 10px;
 
