@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }, );
 });
 
-var alltype = '/All-of-Type.html';  
+var alltype = '../All-of-Type.html';  
 
 function alloftype() {
     window.location.href = alltype; 
