@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All-Of-Type</title>
-    <!--<link rel="shortcut icon" type="image/x-icon" href="./image/logo.png" />-->
-    <!--CSS-->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./image/logo.png" /> -->
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/loading.css">
 </head>
@@ -13,32 +13,14 @@
 <body>
     <main>
         <section class="loading">
-            <h1 class = "loading-title"></h1>
+            <h1 class="loading-title"></h1>
             <div class="progress-bar" aria-hidden="true">
                 <span class="progress-bar-gauge"></span>
             </div>
         </section>
     </main>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        const title = "l o a d i n g . . ";
-        const loadingTitle = document.querySelector('.loading-title');
-
-        let index = 0;
-
-        function displayNextCharacter() {
-            if (index < title.length) {
-                loadingTitle.textContent += title[index];
-                index++;
-                setTimeout(displayNextCharacter, 150); 
-            }
-        }
-
-        displayNextCharacter();
-    });
-
-    </script>
-
+    <script src="./js/storage.js"></script>
+    <script src="./js/loading-result.js"></script>
 </body>
 </html>
