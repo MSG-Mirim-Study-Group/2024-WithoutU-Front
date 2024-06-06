@@ -1,4 +1,4 @@
-function inputValueChange(){
+function inputValueChange() {
     let inputName = document.getElementById('input-name').value;
     console.log(inputName);
     localStorage.setItem("input-name", inputName);
@@ -24,10 +24,10 @@ function sendMessage() {
         fromElement.textContent = from;
         fromElement.className = 'from';
         
-        textElement.textContent = message;
+        textElement.innerHTML = message.replace(/\n/g, '<br>'); // 줄바꿈 문자를 <br> 태그로 변환
         textElement.className = 'text';
 
-        const messageClass = messageCount % 2 === 0 ? 'chat red text' : 'chat blue text';
+        const messageClass = messageCount % 2 === 0 ? 'chat red' : 'chat blue';
         messageElement.className = messageClass;
 
         messageElement.appendChild(textElement);
