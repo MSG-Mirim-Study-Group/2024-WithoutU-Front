@@ -1,12 +1,11 @@
+/* 기초 설정 */
 body {
     background-size: cover;
     background-attachment: fixed;
-    height: 1080px;
 }
 main {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(199, 199, 199, 0.8);
+    height: 100vh;
+    background-color: rgba(199, 199, 199, 0.4);
     backdrop-filter: blur(3px);
 }
 p, a {
@@ -31,41 +30,43 @@ p, a {
 
 /* main body */
 .game-body {
-    width: 45%;
-    height: auto;
-    margin: 1rem auto 0;
-    padding: 3rem 0 3rem;
+    width: 45vw;
+    margin: 2vh auto 2vh;
 }
 /* main body - title */
 .question-title {
-    height: 15rem;
-    display: flex;
+    height: 23vh;
+    
+    /* 가운데 정렬을 위한 */
+    display: flex;      
     align-items: center;
     justify-content: center;
+
     border: #fff solid;
-    border-radius: 1.4rem;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin-bottom: 7rem;
+    border-radius: 1.4vw;
+    background-color: rgba(233, 233, 233, 0.2);
+    margin-bottom: 7vh;
 }
 .question-title p {
-    font-size: 1.7rem;
+    font-size: 1.4vw;
 }
 /* main body - option */
 .question-option {
     display: grid;
     grid-template-columns: 1fr 9fr;     /* fr : 비율 */
-    grid-template-rows: 8fr 1fr;
+    grid-template-rows: 10fr 1fr;
+    
     border: none;
     background: none;
     margin: 4rem 0 4rem;
 }
 .option-header {
-    height: 3.3rem;
+    width: 6.5vw;
     align-self: self-end;
     grid-row: 1 / span 2;
 }
 .option-content {
-    font-size: 1.55rem;
+    font-size: 1.4vw;
     align-self: center;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -90,5 +91,5 @@ p, a {
     content: url('../image/question/Line 13.png'); 
 }
 .question-option:hover .option-content {
-    color: #9f9f9f;
+    color: #6c6c6c;
 }

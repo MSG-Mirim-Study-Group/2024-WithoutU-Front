@@ -15,8 +15,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1920px;
-    height: 1080px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .loading-title::before {
@@ -27,13 +27,18 @@ body {
 
 .loading-title {
     font-family: 'GaRam'; 
-    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    text-shadow: -1px 0 #666666,	       
+    0 1px #666666,	       
+    1px 0 #666666,	       
+    0 -1px #666666,
+    2.3px 2px 1px #444444,
+    10px 2px 4px rgb(159,159,159,0.5);
+    color: white;
     margin-bottom: 20px;
     text-align: center;
     font-size: 120px;
     font-weight: 600;
     line-height: 1.3333;
-    color: white;
     animation-duration: 4000ms;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -44,7 +49,7 @@ body {
     width: 800px;
     height: 12px;
     border-radius: 100px;
-    background-color: rgb(167,167,167);
+    background-color: rgb(192,24,24,0.2);
     overflow: hidden;
 }
 
