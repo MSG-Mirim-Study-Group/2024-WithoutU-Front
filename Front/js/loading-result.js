@@ -46,20 +46,20 @@ function redirectToResultPage() {
 
     // 예시: maxKey가 'dj'일 경우 결과 페이지로 이동
     if (maxKey === 'dj') {
-        window.location.href = './result/result5.html';
+        window.location.href = './type/typeLine5.html';
     } else if (maxKey === 'sk') {
-        window.location.href = './result/result8.html';
+        window.location.href = './type/typeLine8.html';
     } else if (maxKey === 'hd') {
-        window.location.href = './result/result3.html';
+        window.location.href = './type/typeLine3.html';
     } else if (maxKey === 'hy') {
-        window.location.href = './result/result2.html';
+        window.location.href = './type/typeLine2.html';
     } else if (maxKey === 'ny') {
-        window.location.href = './result/result4.html';
+        window.location.href = './type/typeLine4.html';
     } else if (maxKey === 'jy') {
-        window.location.href = './result/result7.html';
+        window.location.href = './type/typeLine7.html';
     } else if (maxKey === 'dh') {
-        window.location.href = './result/result6.html';
+        window.location.href = './type/typeLine6.html';
     } else if (maxKey === 'gm') {
-        window.location.href = './result/result1.html';
+        window.location.href = './type/typeLine1.html';
     }
 }
