@@ -1,0 +1,186 @@
+/* Start 페이지 기본세팅 */
+body {
+    background-image: url('../image/start/start.jpg');
+    background-size : cover;
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(197, 197, 197, 0.45);
+}
+
+/* Start1 페이지 */
+.MainTitle {
+    position: absolute;
+    top: 40%;   left: 50%;
+    transform: translate(-50%, -45%);
+    font-family: 'Watermelon';
+    font-size: 15vw;
+    color: #f4f4f4;
+}
+.SubTitle {
+    position: absolute;
+    top: 63vh;   left: 50%;
+    transform: translate(-50%, -65%);
+
+    width: 32%;     height: 8%;
+    background-color: rgba(114,109,102,0.85);
+    border: 3px solid #f4f4f4;
+    border-width: 3px;
+    border-radius: 50px;
+    outline: none;
+    
+    font-family: 'SCDream5';
+    font-size: 1.7vw;
+    color: #f4f4f4;
+}
+
+/* Start2 페이지 */
+.MainTitle2 {
+    position: absolute;
+    top: 26vh;  left: 50%;
+    transform: translate(-50%, -45%);
+
+    font-family: 'Watermelon';
+    font-size: 13vw;
+    color: #f4f4f4;
+}
+.SubTitle2 {
+    position: absolute;
+    top: 45vh;   left: 50%;
+    transform: translate(-50%, -65%);
+
+    width: 25%;     height: 6%;
+    background-color: rgba(114,109,102,0.85);
+    border: 3px solid #f4f4f4;
+    border-width: 3px;
+    border-radius: 50px;
+    outline: none;
+    
+    font-family: 'SCDream5';
+    font-size: 1.4vw;
+    color: #f4f4f4;
+}
+.ButtonGroup > Button {
+    text-align: center;
+    font-family: 'SCDream5';
+    left: 50%;
+    font-size: 150%;
+    width: 28%;
+    height: 7.5%;
+    color: #f4f4f4;
+    border: 3px solid #f4f4f4;
+    border-width: 3px;
+    border-radius: 20px;
+    outline: none;
+    transform: translate(-50%, -65%);
+}
+.StartButton {
+    position: absolute;
+    top: 70vh;
+    background-color: var(--main-color1);
+    background-color: rgba(204,134,134, 0.5 );
+}
+.AllButton {
+    position: absolute;
+    top: 80vh;
+    background-color: rgba(141,202,206, 0.5 );
+    
+}
+
+/* 이름 입력 페이지 */
+hr {
+    position: absolute;
+    width: 95%;
+    border: solid white 2px;
+    margin-left: 2.5%;
+}
+.line1 {
+    top: 10%;
+}
+.line2 {
+    bottom: 10%;
+}
+
+.input-div{
+    display: inline-block;
+	bottom: 10%;
+    width: 80%;
+}
+.input-div > .input-name {
+    position: absolute;
+    width: 48vw; 
+    height: 13vh;
+    left: 20%;
+    top: 45%;
+    
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid white 3px;
+	border-radius: 10px;
+
+    color: white;
+	font-size: 180%;
+    line-height: 200%;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.45);
+    outline: none;
+
+   padding: 0 1rem 0 1rem;
+}
+.input-div > input::placeholder{
+    text-align: left;
+    font-family: 'SCDream3';
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.45);
+}
+.input-div > button{
+    position: absolute;
+    top: 45%;
+    right: 23%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: solid white 3px;
+	border-radius: 10px;
+    width: 6%;
+    color: white;
+	font-size: 180%;
+    line-height: 13vh;
+}
+
+/* Start3 페이지 */
+.ment {
+    position: relative;
+    top: 28%;
+    font-family: 'GaRam';
+    font-size: 700%;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 3px 2.5px black;
+    
+}
+#ment-group {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: flex-end;
+    animation: fadein 5s ease 5s;
+    -webkit-animation: fadein 5s;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 2;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 2;
+    }
+}
