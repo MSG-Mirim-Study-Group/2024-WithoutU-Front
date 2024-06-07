@@ -3,43 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>난너없이 : 환승연애로 알아보는 나의 연애 유형 테스트</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../image/logo1.png"/>
+
+    <!--CSS-->
     <link rel="stylesheet" href="../css/chat.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>방명록-서경</title>
     <style>
-        body{
-            background-image: url(../image/gestbook/background/서경.png);
-        }
+        body{ background-image: url(../image/gestbook/background/서경.png); }
     </style>
-</head>
-<body class="bg">
-    <div class="bg"></div>
-    <header>
-        <button class="btn" style="float: left;" onclick="location.href='../result/result8.html'">
-            <img src="../image/gestbook/Arrow1.svg" alt="arrow1"">
-            <p>이전화면</p>
-        </button>
-        <button class="btn" style="float: right;" onclick="location.href='../index.html'"">
-            <p>시작화면</p>
-            <img src="../image/gestbook/Arrow2.svg" alt="arrow2">
-        </button>
-        <hr />
-    </header>
-    <div>
-        <div>
-        <div class="chat_wrap" id="chat_wrap">
-            <!-- js -->
-        </div>
-        <div class="input-div">
-            <div class="tag">
-                <p class="name">서경</p>
-                <p class="type">유형</p>
-            </div>
-            <textarea id="chat-input" name="gestbook" placeholder="방명록을 작성해주세요"></textarea>
-            <button id="send" data-page-id="page8">입력</button>
-            <hr />
-        </div>
-    </div>
+    
+    <!--Script-->
     <script src="../js/gestbook.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <button class="btn" style="float: left;" onclick="location.href='../result/result8.html'">
+                <img src="../image/gestbook/Arrow1.svg" alt="arrow1">
+                <p>이전화면</p>
+            </button>
+            <button class="btn" style="float: right;" onclick="location.href='../index.html'">
+                <p>시작화면</p>
+                <img src="../image/gestbook/Arrow2.svg" alt="arrow2">
+            </button>
+            <hr/>
+        </header>
+        <div class="content">
+            <div class="chat_wrap" id="chat_wrap">  </div>
+            <div class="input-div">
+                <div class="tag">
+                    <p class="name">서경</p>
+                    <p class="type">유형</p>
+                </div>
+                <textarea id="chat-input" name="gestbook" placeholder="방명록을 작성해주세요"></textarea>
+                <button id="send" data-page-id="page1">입력</button>
+            </div>
+            <hr/>
+        </div>
+    </main>
 </body>
 </html>
