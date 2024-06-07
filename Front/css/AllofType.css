@@ -1,42 +1,31 @@
+/* 기초 설정 */
 body {
     background-image: url('../image/AllofType/back-2.png');
     background-size: cover;
 }
-
 main {
-    background-color: rgba(197, 197, 197, 0.6);
+    height: 100vh;
+    background-color: rgba(238, 238, 238, 0.4); 
+    backdrop-filter: blur(5px);
 }
 
-img{
-    vertical-align: top;
-}
-
-.line {
-    width: 100%;
-}
-
-.line1 {
-    width: 100%;
-}
-
-.header {
-    position: relative;
-    width: 100%;
-    height: 100vh
-}
-
+/* header */
 .btn{
     display: flex;
-    color: white;
     justify-content: center;
     align-items: center;
-    font-size: 240%;
-    margin: 2%;
-    margin-left: 4.5%;
-    margin-right: 4.5%;
-    background-color: rgba(0, 0, 0, 0);
-    border: 0;
+
+    border: none;
+    background-color: transparent;
+    margin: 2.5vh 4.5vw;
+
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(107deg) brightness(111%) contrast(101%);
+}
+button > p{
+    color: black;
+    font-family: 'SCDream6';  
+    font-size: 3vh;
+    margin: 1vw;
 }
 .btn:hover{
     filter: invert(71%) sepia(7%) saturate(1966%) hue-rotate(314deg) brightness(85%) contrast(85%);
@@ -45,128 +34,120 @@ img{
     filter: invert(95%) sepia(3%) saturate(5582%) hue-rotate(147deg) brightness(90%) contrast(76%);
 }
 
-p {
-    color: #f4f4f4;
-    font-family: 'SCDream6';
-}
-
-button > p{
-    color: black;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
+/* hr */
 hr{
     width: 95%;
     border: solid white 2px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.first-hr {
-    margin-top: 1%;
-    margin-left: 2.5%;
+/* content */
+.content {
+    height: 80vh;
 }
-
-.last-hr {
-    margin-top: 10%;
-    margin-left: 2.5%;
+.line-group {
+    height: 30vh;
 }
+.line {
+    width: 95%;
+    margin: 7vh 2.5%;
+}   
 
 .text {
     position: absolute;
-    bottom: 10%;
-    font-size: 200%;
+    font-family: 'SCDream5';
+    font-size: 3vh;
     color: #f4f4f4;
-    left: 34%;
+    bottom: 2.5vh;
+    left: 4.3vw;
 }
-
-.line-group {
-    height: 30%;
-}
-
 .Gyumin {
     position: absolute;
-    background: url('../image/AllofType/m-letter.png') no-repeat;
-    transform:rotate(10deg);
-    top: 300px;
-    left: 300px;
-    height: 239px;
-    width: 205px;
+    background: url('../image/AllofType/m-letter.png');
+    background-size: contain;
+    transform:rotate(8deg);
+    width: 12vw;
+    height: 25vh;
+    top: 26vh;
+    left: 16vw;
     border: none;
 }
-
 .Dongjin {
     position: absolute;
-    background: url('../image/AllofType/m-letter.png') no-repeat;
-    transform:rotate(-5deg);
-    top: 320px;
-    left: 600px;
-    height: 239px;
-    width: 205px;
+    background: url('../image/AllofType/m-letter.png');
+    background-size: contain;
+    transform:rotate(-3deg);
+    width: 12vw;
+    height: 25vh;
+    top: 27vh;
+    left: 35vw;
     border: none;
 }
-
 .Huido {
     position: absolute;
-    background: url('../image/AllofType/m-letter.png') no-repeat;
-    transform:rotate(-5deg);
-    top: 310px;
-    left: 900px;
-    height: 239px;
-    width: 205px;
+    background: url('../image/AllofType/m-letter.png');
+    background-size: contain;
+    transform:rotate(-1deg);
+    width: 12vw;
+    height: 25vh;
+    top: 25vh;
+    left: 53vw;
     border: none;
 }
-
 .Juwon {
     position: absolute;
-    background: url('../image/AllofType/m-letter.png') no-repeat;
-    transform:rotate(-5deg);
-    top: 280px;
-    right: 500px;
-    height: 239px;
-    width: 205px;
+    background: url('../image/AllofType/m-letter.png');
+    background-size: contain;
+    transform:rotate(2%);
+    width: 12vw;
+    height: 25vh;
+    top: 21vh;
+    left: 72vw;
     border: none;
 }
 
 .Dahye {
     position: absolute;
-    background: url('../image/AllofType/w-letter.png') no-repeat;
-    transform:rotate(0deg);
-    bottom: 215px;
-    left: 300px;
-    height: 239px;
-    width: 205px;
+    background: url('../image/AllofType/w-letter.png');
+    background-size: contain;
+    transform:rotate(2%);
+    width: 12vw;
+    height: 25vh;
+    top: 55vh;
+    left: 16vw;
     border: none;
 }
-
 .Nayeon {
     position: absolute;
-    background: url('../image/AllofType/w-letter.png') no-repeat;
+    background: url('../image/AllofType/w-letter.png');
+    background-size: contain;
     transform:rotate(5deg);
-    bottom: 190px;
-    left: 620px;
-    height: 239px;
-    width: 205px;
+    width: 12vw;
+    height: 25vh;
+    top: 57vh;
+    left: 37vw;
     border: none;
 }
-
 .Seokyong {
     position: absolute;
-    background: url('../image/AllofType/w-letter.png') no-repeat;
-    transform:rotate(-5deg);
-    bottom: 210px;
-    left: 930px;
-    height: 239px;
-    width: 205px;
+    background: url('../image/AllofType/w-letter.png');
+    background-size: contain;
+    transform:rotate(2deg);
+    width: 12vw;
+    height: 25vh;
+    top: 54vh;
+    left: 57vw;
     border: none;
 }
-
 .Haeun {
     position: absolute;
-    background: url('../image/AllofType/w-letter.png') no-repeat;
-    transform:rotate(-5deg);
-    bottom: 250px;
-    right: 440px;
-    height: 239px;
-    width: 205px;
+    background: url('../image/AllofType/w-letter.png');
+    background-size: contain;
+    transform:rotate(-7deg);
+    width: 12vw;
+    height: 25vh;
+    top: 50vh;
+    left: 75vw;
     border: none;
 }
