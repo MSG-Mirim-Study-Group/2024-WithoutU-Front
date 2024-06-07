@@ -1,6 +1,5 @@
 <?php
 // load_messages.php
-// 특정 페이지 ID에 해당하는 메시지를 MySQL 데이터베이스에서 가져오는 스크립트
 
 // MySQL 데이터베이스 정보
 $servername = "mysql";
@@ -17,7 +16,7 @@ if ($conn->connect_error) {
 }
 
 // GET 요청으로 받은 페이지 ID 처리
-$page_id = $_GET['page_id'];  // 페이지 ID
+$page_id = $conn->real_escape_string($_GET['page_id']);
 
 // 특정 페이지 ID에 해당하는 메시지 선택
 $sql = "SELECT name, message FROM messages WHERE page_id='$page_id' ORDER BY timestamp ASC";

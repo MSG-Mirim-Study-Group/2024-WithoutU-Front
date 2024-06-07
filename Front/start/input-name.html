@@ -21,5 +21,14 @@
         </div>
     </main>
     <script src="../js/gestbook.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('submit').addEventListener('click', function() {
+                console.log('Success!!');
+                inputValueChange();
+                location.href = 'start-3.html';
+            });
+        });
+    </script>
 </body>
 </html>
