@@ -220,7 +220,6 @@ span{
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
-
 .text{
     color: white;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.45);
