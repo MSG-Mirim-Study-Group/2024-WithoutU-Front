@@ -1,11 +1,8 @@
 body {
     background-image: url('../image/typeLine/image40.png');
-    background-size: 100%;
-    
-    width: 100%;
-    padding-top: 56.25%;
+    background-size: cover;
+    background-attachment: fixed;
     position: relative;
-
 }
 
 /*  main    */
@@ -13,57 +10,30 @@ body {
     background-color: rgba(255, 255, 255, 0.6); 
     backdrop-filter: blur(5px);
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    width: 70vw;
+    height: 30vh;
+    padding: 35vh 15vw;
 }
 
 .saying{
-    position: absolute; 
-    top: 44%;   
-    right: 20%;
     opacity: 0;
     transition: opacity 2s ease-in;
     /* transform: translate(-50%, -50%); */
 
-    font-size: 725%;
+    font-size: 6.5vw;
     font-family: 'GaRam';
     font-weight: lighter;
     color: #F1FEFF;
-    
     text-shadow: -1px 0 #666666,	       
                 0 1px #666666,	       
                 1px 0 #666666,	       
                 0 -1px #666666,
-                2.3px 2px 1px #000000,
+                2px 2px 1px #000000,
                 -2.2px -2px 4px #b0fefe;
+}
+.saying.bottom {
+    text-align: right;
 }
 .saying.fade-in {
     opacity: 1;
-}
-
-/*  유형    */
-.Gyumin {
-    top : 36%;
-}
-.Haeeun {
-    right: 5.5%;
-}
-.Heedoo {
-    right: 28%;
-}
-
-.Dongjin {
-    right: 15%;   
-}
-.Dahye {
-    right: 27%;
-}
-.Juwon {
-    right: 23%;
-    top: 36%;
-}
-.Seogyeong {
-    right: 38%;
 }
