@@ -1,4 +1,6 @@
 <?php
+session_start(); // 세션 시작
+
 $servername = "localhost"; //mysql 컨테이너의 서비스 이름을 사용
 $name = "root";
 $password = "1234";
