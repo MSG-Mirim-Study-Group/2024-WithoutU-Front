@@ -1,14 +1,20 @@
 <?php
 session_start(); // 세션 시작
 
-$servername = "localhost"; //mysql 컨테이너의 서비스 이름을 사용
-$name = "root";
+// MySQL 데이터베이스 정보
+$servername = "mysql";
+$username = "root";
 $password = "1234";
 $dbname = "WithoutU";
 
-$conn = new mysqli($servername, $name, $password, $dbname);
+// MySQL 연결 생성
+$conn = new mysqli($servername, $username, $password, $dbname);
 
+// 연결 오류 확인
 if ($conn->connect_error) {
-    die("데이터베이스 연결 실패: " . $conn->connect_error);
+    die("Connection failed: " . $conn->connect_error);
 }
 ?>
+
+
+
