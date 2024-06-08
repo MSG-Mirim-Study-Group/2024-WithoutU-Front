@@ -1,19 +1,7 @@
 <?php
 // submit_message.php
-
-// MySQL 데이터베이스 정보
-$servername = "mysql";
-$username = "user";
-$password = "userpassword";
-$dbname = "guestbook";
-
-// MySQL 연결 생성
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// 연결 오류 확인
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include('../api/connect.php');
+mysqli_set_charset($conn, "utf8");
 
 // POST 요청으로 받은 데이터 처리
 $name = $conn->real_escape_string($_POST['name']);
@@ -31,5 +19,5 @@ if ($conn->query($sql) === TRUE) {
 }
 
 // MySQL 연결 닫기
-$conn->close();
+mysqli_close($conn);
 ?>
