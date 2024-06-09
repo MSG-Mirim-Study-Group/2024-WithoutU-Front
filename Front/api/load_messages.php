@@ -1,19 +1,7 @@
 <?php
 // load_messages.php
-
-// MySQL 데이터베이스 정보
-$servername = "mysql";
-$username = "user";
-$password = "userpassword";
-$dbname = "guestbook";
-
-// MySQL 연결 생성
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// 연결 오류 확인
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include('../api/connect.php');
+mysqli_set_charset($conn, "utf8");
 
 // GET 요청으로 받은 페이지 ID 처리
 $page_id = $conn->real_escape_string($_GET['page_id']);
@@ -35,5 +23,5 @@ if ($result->num_rows > 0) {
 echo json_encode($messages);
 
 // MySQL 연결 닫기
-$conn->close();
+mysqli_close($conn);
 ?>
