@@ -16,10 +16,10 @@ services:
       - app-network
 
   php:
-    image: php:7.4-fpm
+    image: php:8.3.7-fpm
     container_name: php
     volumes:
-      - ./php/php.ini:/usr/local/etc/php/php.ini  # PHP 설정 파일 경로 수정
+      - ./php.ini:/usr/local/etc/php/php.ini  # PHP 설정 파일 경로 수정
       - ./Front:/var/www/html/Front  # Front 폴더를 웹 루트로 매핑
     networks:
       - app-network
@@ -28,8 +28,10 @@ services:
     image: mysql:5.7
     container_name: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: example_db
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: WithoutU
+    ports:
+      - "3306:3306"
     volumes:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql  # 초기화 SQL 파일 경로 수정
     networks:
