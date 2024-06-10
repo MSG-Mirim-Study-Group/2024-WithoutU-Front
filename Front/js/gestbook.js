@@ -34,11 +34,11 @@ function getNameFromServer(callback) {
                     callback(response.name);
                 } else {
                     console.error(response.message);
-                    callback(null);
+                    callback('error1');
                 }
             } catch (error) {
                 console.error("Parsing error:", xhr.responseText);
-                callback(null);
+                callback('error2');
             }
         }
     };
@@ -53,7 +53,7 @@ function sendMessage() {
 
         if (name && chatInput) {
             const xhr = new XMLHttpRequest();
-            xhr.open("POST", "/api/submit_message.php", true);
+            xhr.open("POST", "../api/submit_message.php", true);
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             xhr.onload = function() {
                 if (xhr.status === 200) {
@@ -85,7 +85,7 @@ function loadMessages() {
 
     // AJAX 요청을 통해 메시지를 서버에서 가져오기
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "/api/load_messages.php?page_id=" + encodeURIComponent(pageId), true);
+    xhr.open("GET", "../api/load_messages.php?page_id=" + encodeURIComponent(pageId), true);
     xhr.onload = function() {
         if (xhr.status === 200) {
             try {
