@@ -4,12 +4,13 @@
 
 // MySQL 데이터베이스 정보
 $servername = "mysql";
-$username = "user";
-$password = "userpassword";
+$username = "root";
+$password = "1234";
 $dbname = "guestbook";
+$port=3307;
 
 // MySQL 연결 생성
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
 // 연결 오류 확인
 if ($conn->connect_error) {
@@ -27,6 +28,8 @@ $sql = "INSERT INTO messages (name, message, page_id) VALUES ('$name', '$message
 // 삽입 결과 확인
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 // MySQL 연결 닫기

@@ -19,7 +19,7 @@ services:
     image: php:8.3.7-fpm
     container_name: php
     volumes:
-      - ./php.ini:/usr/local/etc/php/php.ini  # PHP 설정 파일 경로 수정
+      - ./php/php.ini:/usr/local/etc/php/php.ini  # PHP 설정 파일 경로 수정
       - ./Front:/var/www/html/Front  # Front 폴더를 웹 루트로 매핑
     networks:
       - app-network

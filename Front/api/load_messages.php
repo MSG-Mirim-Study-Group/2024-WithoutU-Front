@@ -1,6 +1,6 @@
 <?php
 // load_messages.php
-include('../api/connect.php');
+include('connect.php');
 mysqli_set_charset($conn, "utf8");
 
 // GET 요청으로 받은 페이지 ID 처리
