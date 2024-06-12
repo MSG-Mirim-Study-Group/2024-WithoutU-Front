@@ -14,8 +14,10 @@
         <div class="header"> 
                 <hr class="line1">
                 <div class = "input-div">
-                    <input id="input-name" class="input-name" onchange="inputValueChange()" placeholder="방명록에 남길 당신의 이름을 작성해주세요" autocomplete="off"/>
-                    <button id="submit" onclick="location.href='start-3.html'">입력</button>
+                    <!-- <form action="submit_name.php" method="post"> -->
+                        <input type="text" name="name" id="input-name" class="input-name" onchange="inputValueChange()" placeholder="방명록에 남길 당신의 이름을 작성해주세요" autocomplete="off"/>
+                        <button type="submit" id="submit" onclick="location.href='start-3.html'">입력</button>
+                    <!-- </form> -->
                 </div>
                 <hr class="line2"/>
         </div>

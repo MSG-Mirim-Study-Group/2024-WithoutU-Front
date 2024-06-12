@@ -5,12 +5,12 @@ FROM php:8.2-fpm-alpine3.18
 RUN docker-php-ext-install mysqli
 
 # 컨테이너 내부 디렉토리 및 파일 추가
-COPY ./source /var/www/html
-COPY ./source/db /var/www/html/db
+COPY ./front /var/www/html
+COPY ./front/api /var/www/html/db
 
 # 환경 변수 설정
 ENV MYSQL_HOST=root
-ENV MYSQL_PORT=3308
+ENV MYSQL_PORT=3306
 
 # 컨테이너 실행 명령 정의
 CMD ["php-fpm"]
