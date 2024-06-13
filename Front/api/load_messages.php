@@ -1,27 +1,33 @@
 <?php
-// load_messages.php
-include('connect.php');
+header('Content-Type: application/json');
+
+include('../api/connect.php');
 mysqli_set_charset($conn, "utf8");
 
-// GET 요청으로 받은 페이지 ID 처리
-$page_id = $conn->real_escape_string($_GET['page_id']);
+$response = array();
 
-// 특정 페이지 ID에 해당하는 메시지 선택
-$sql = "SELECT name, message FROM messages WHERE page_id='$page_id' ORDER BY timestamp ASC";
-$result = $conn->query($sql);
+if (isset($_GET['page_id'])) {
+    $page_id = $_GET['page_id'];
 
-$messages = array();
+    $sql = "SELECT name, message FROM messages WHERE page_id='$page_id'";
+    $result = $conn->query($sql);
 
-// 결과가 있는 경우 배열로 변환
-if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()) {
-        $messages[] = $row;
+    if ($result->num_rows > 0) {
+        $messages = array();
+        while ($row = $result->fetch_assoc()) {
+            $messages[] = array('name' => $row['name'], 'message' => $row['message']);
+        }
+        $response['success'] = true;
+        $response['messages'] = $messages;
+    } else {
+        $response['success'] = false;
+        $response['message'] = "No messages found.";
     }
+} else {
+    $response['success'] = false;
+    $response['message'] = "Page ID not provided.";
 }
 
-// JSON 형식으로 출력
-echo json_encode($messages);
-
-// MySQL 연결 닫기
-mysqli_close($conn);
+echo json_encode($response);
+$conn->close();
 ?>
