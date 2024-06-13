@@ -16,7 +16,7 @@
                 <div class = "input-div">
                     <!-- <form action="submit_name.php" method="post"> -->
                         <input type="text" name="name" id="input-name" class="input-name" onchange="inputValueChange()" placeholder="방명록에 남길 당신의 이름을 작성해주세요" autocomplete="off"/>
-                        <button type="submit" id="submit" onclick="location.href='start-3.html'">입력</button>
+                        <button type="submit" id="submit">입력</button>
                     <!-- </form> -->
                 </div>
                 <hr class="line2"/>
@@ -24,6 +24,8 @@
     </main>
     <script src="../js/gestbook.js"></script>
     <script>
+        // localStorage를 초기화하여 저장된 모든 데이터 제거
+        localStorage.clear();
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('submit').addEventListener('click', function() {
                 inputValueChange();
