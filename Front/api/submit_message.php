@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($name && $message && $page_id) {
         $stmt = $conn->prepare("INSERT INTO messages (name, message, page_id) VALUES (?, ?, ?)");
-        $stmt->bind_param("ssi", $name, $message, $page_id);
+        $stmt->bind_param("sss", $name, $message, $page_id);
 
         if ($stmt->execute()) {
             $response['success'] = true;
