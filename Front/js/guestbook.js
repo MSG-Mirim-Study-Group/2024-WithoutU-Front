@@ -4,13 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('send').addEventListener('click', sendMessage);  // 'send' 버튼 클릭 시 sendMessage 함수 호출
 });
 
-// 입력 값이 변경될 때 호출되는 비동기 함수
-function inputValueChange() {
-    let inputName = document.getElementById('input-name').value;
-    console.log(inputName);
-    localStorage.setItem("input-name", inputName);
-}
-
 // 메시지를 서버로 보내는 비동기 함수
 async function sendMessage() {
     const NameInput = localStorage.getItem('input-name');
@@ -24,9 +17,10 @@ async function sendMessage() {
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
-                body: `name=${encodeURIComponent(NameInput)}&message=${encodeURIComponent(chatInput)}&page_id=${encodeURIComponent(pageId)}`  // 이름, 메시지, 페이지 ID를 URL 인코딩하여 요청 본문에 포함
+                body: `name=${encodeURIComponent(NameInput)}&message=${encodeURIComponent(chatInput)}&page_id=${encodeURIComponent(pageId)}`
             });
             const data = await response.json();  // 응답을 JSON 형식으로 파싱
+            // localStorage.setItem("chat-input", chatInput);
             if (data.success) {
                 console.log(data.message);  // 성공 메시지 출력
                 loadMessages();  // 메시지 목록 새로고침
@@ -47,7 +41,7 @@ async function loadMessages() {
     const chatWrap = document.getElementById('chat_wrap');  // 'chat_wrap' 요소 가져오기
     const pageId = document.getElementById('send').dataset.pageId;  // 'send' 버튼의 데이터 속성에서 페이지 ID 가져옴
     try {
-        const response = await fetch(`../api/load_messages.php?page_id=${encodeURIComponent(pageId)}`);  // 페이지 ID를 포함하여 서버에 메시지 요청
+        const response = await fetch(`../api/load_message.php?page_id=${encodeURIComponent(pageId)}`);  // 페이지 ID를 포함하여 서버에 메시지 요청
         const data = await response.json();  // 응답을 JSON 형식으로 파싱
         if (data.success) {
             const messages = data.messages;  // 메시지 목록 가져오기
