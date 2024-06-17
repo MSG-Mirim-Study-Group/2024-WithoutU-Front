@@ -18,18 +18,25 @@ services:
   php:
     image: php:8.3.7-fpm
     container_name: php
+    restart: unless-stopped
     volumes:
       - ./php/php.ini:/usr/local/etc/php/php.ini  # PHP 설정 파일 경로 수정
       - ./Front:/var/www/html/Front  # Front 폴더를 웹 루트로 매핑
     networks:
       - app-network
+    command:
+      - /bin/sh
+      - -c
+      - |
+        echo "security.limit_extensions = .html .htm .php" >> /usr/local/etc/php-fpm.d/www.conf
+        php-fpm
 
   mysql:
     image: mysql:5.7
     container_name: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: 1234
-      MYSQL_DATABASE: WithoutU
+      MYSQL_ROOT_PASSWORD: "1234"
+      MYSQL_DATABASE: "WithoutU"
     ports:
       - "3306:3306"
     volumes:

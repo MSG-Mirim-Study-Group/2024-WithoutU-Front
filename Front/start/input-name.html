@@ -14,15 +14,14 @@
         <div class="header"> 
                 <hr class="line1">
                 <div class = "input-div">
-                    <!-- <form action="submit_name.php" method="post"> -->
-                        <input type="text" name="name" id="input-name" class="input-name" onchange="inputValueChange()" placeholder="방명록에 남길 당신의 이름을 작성해주세요" autocomplete="off"/>
-                        <button type="submit" id="submit">입력</button>
-                    <!-- </form> -->
+                    
+                    <input type="text" id="input-name" class="input-name" placeholder="방명록에 남길 당신의 이름을 작성해주세요" autocomplete="off"/>
+                    <button type="submit" id="submit">입력</button>
+                        
                 </div>
                 <hr class="line2"/>
         </div>
     </main>
-    <script src="../js/gestbook.js"></script>
     <script>
         // localStorage를 초기화하여 저장된 모든 데이터 제거
         localStorage.clear();
@@ -33,6 +32,13 @@
                 location.href = 'start-3.html';
             });
         });
+
+        // 입력 값이 변경될 때 호출되는 비동기 함수
+        function inputValueChange() {
+            let inputName = document.getElementById('input-name').value;
+            console.log(inputName);
+            localStorage.setItem("input-name", inputName);
+        }
     </script>
 </body>
 </html>
