@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../css/question.css">
     <style>
         body { background-image: url('../image/question/image4.png'); }
-        .question-title { height: 28vh; margin-bottom: 8vh; }
-        .question-option { margin: 9vh 0; }
+        .question-title { height: 27vh; }
+        .question-option { margin: 6.8vh 0; }
     </style>
 </head>
 <body>
@@ -28,24 +28,29 @@
         </section>
         <section class="game-body">
             <div class="question-title">
-                <p>잠시 후, 문자 한 통이 도착한다.<br><br>
+                <p>조금 후, 문자가 도착했습니다.<br><br>
                     '당신의 x는 당신을 선택하지 않았습니다'<br><br>
-                    이 문자를 받은 나는?</p>
+                    문자를 받은 나의 심경은?</p>
             </div>
-            <button class="question-option" onclick="updateVariables('question6.html', 'dj', 'sk', 'jy');">
+            <button class="question-option" onclick="updateVariables('question6.html', 'dj', 'jy');">
                     <img class="option-header" src="../image/question/Group 29.png" alt="B">
                     <a class="option-content">다른 입주자들이 눈치 못 채게 혼자 힘들어한다.</a>
                     <img class="option-line" src="../image/question/Line 2.png" alt="B">
             </button>
             <button class="question-option" onclick="updateVariables('question6.html', 'hy', 'dj');">
                 <img class="option-header" src="../image/question/Group 30.png" alt="R">
-                <a class="option-content">몰래 숨어서 눈물 흘리다가 다른 입주자한테 위로를 받는다.</a>
+                <a class="option-content">눈물을 주체하지 못해 다른 입주자한테 위로를 받는다.</a>
                 <img class="option-line" src="../image/question/Line 12.png" alt="R">
             </button>
-            <button class="question-option" onclick="updateVariables('question6.html', 'ny', 'hd', 'gm');">
+            <button class="question-option" onclick="updateVariables('question6.html', 'sk', 'hd',);">
                 <img class="option-header" src="../image/question/Group 31.png" alt="B">
-                <a class="option-content">X에게 큰 기대를 하지 않아서 별로 생각하지 않고 넘긴다.</a>
+                <a class="option-content">X에게 미련은 없지만 마음이 아프다.</a>
                 <img class="option-line" src="../image/question/Line 2.png" alt="B">
+            </button>
+            <button class="question-option" onclick="updateVariables('question6.html', 'ny', 'gm');">
+                <img class="option-header" src="../image/question/Group 30.png" alt="B">
+                <a class="option-content">X에게 큰 기대를 하지 않아서 별로 생각하지 않고 넘긴다.</a>
+                <img class="option-line" src="../image/question/Line 12.png" alt="B">
             </button>
         </section>
     </main><script src="../js/script.js"></script>

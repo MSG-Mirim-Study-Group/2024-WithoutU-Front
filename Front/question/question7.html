@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="../css/question.css">
     <style>
         body { background-image: url('../image/question/image6.png'); }
-        .question-title { height: 27vh; }
-        .question-option { margin: 9.3vh 0; }
     </style>
 </head>
 <body>
@@ -28,24 +26,29 @@
         </section>
         <section class="game-body">
             <div class="question-title">
-                <p>데이트 장소에 도착한 당신!<br><br>
-                아직은 어색한 이성과 단 둘이 있어서 분위기가 서먹합니다.<br>
-                이때 당신이 하는 행동은?</p>
+                <p>설레는 마음을 안고 데이트 장소에 도착했습니다.<br>
+                아직은 어색한 이성과 단둘이 있어서 분위기가 서먹합니다.<br>
+                이때 나는?</p>
             </div>
-            <button class="question-option" onclick="updateVariables('question8.html', 'ny', 'hd', 'sk');">
+            <button class="question-option" onclick="updateVariables('question8.html', 'ny', 'hy', 'gm');">
                     <img class="option-header" src="../image/question/Group 29.png" alt="B">
-                    <a class="option-content">상대방에 대해 궁금한 점들을 물어보면서 분위기를 풀어나간다.</a>
+                    <a class="option-content">전박적으로 대화를 이끌어 가며 어색한 분위기를 풀어나간다.</a>
                     <img class="option-line" src="../image/question/Line 2.png" alt="B">
             </button>
-            <button class="question-option" onclick="updateVariables('question8.html', 'dh', 'jy');">
+            <button class="question-option" onclick="updateVariables('question8.html', 'dj', 'jy');">
                 <img class="option-header" src="../image/question/Group 30.png" alt="R">
-                <a class="option-content">상대방이 불편하지 않게 적극적으로 리드한다.</a>
+                <a class="option-content">유머와 재치있는 대화로 상대방을 즐겁게 한다.</a>
                 <img class="option-line" src="../image/question/Line 12.png" alt="R">
             </button>
-            <button class="question-option" onclick="updateVariables('question8.html', 'gm', 'hy', 'dj');">
+            <button class="question-option" onclick="updateVariables('question8.html', 'dh', 'sk');">
                 <img class="option-header" src="../image/question/Group 31.png" alt="B">
-                <a class="option-content">아직 낯을 가려 상대방이 물어보는 질문에 답을 하며 친해진다.</a>
+                <a class="option-content">상대방의 말을 공감해주며 편안한 분위기를 조성한다.</a>
                 <img class="option-line" src="../image/question/Line 2.png" alt="B">
+            </button>
+            <button class="question-option" onclick="updateVariables('question8.html', 'hd');">
+                <img class="option-header" src="../image/question/Group 30.png" alt="R">
+                <a class="option-content">공통 관심사를 찾아 토론하며 상대방과 친해진다.</a>
+                <img class="option-line" src="../image/question/Line 12.png" alt="R">
             </button>
         </section>
     </main><script src="../js/script.js"></script>
