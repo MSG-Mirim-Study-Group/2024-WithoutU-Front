@@ -10,7 +10,8 @@ body {
 
 
 .loading {
-    background-color: rgba(238, 238, 238, 0.6); 
+    background-color: rgba(197, 197, 197, 0.45);
+    backdrop-filter: blur(3px);
     display: flex;
     flex-direction: column;
     justify-content: center;
