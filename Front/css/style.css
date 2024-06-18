@@ -1,5 +1,18 @@
 /* 모두가 공통으로 import 해야하는 기초 세팅 파일 */
 
+body {
+    -webkit-user-select: none;  /* Chrome, Safari, Opera */
+    -moz-user-select: none;     /* Firefox */
+    -ms-user-select: none;      /* Internet Explorer/Edge */
+    user-select: none;          /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+img {
+    -webkit-user-drag: none;  /* Chrome, Safari, Opera */
+    -moz-user-drag: none;     /* Firefox */
+    -ms-user-drag: none;      /* Internet Explorer/Edge */
+}
+
 /* S-Core Dream 시리즈 */
 @font-face {    /*S-Core Dream 3 Light*/
     font-family: 'SCDream3'; 
