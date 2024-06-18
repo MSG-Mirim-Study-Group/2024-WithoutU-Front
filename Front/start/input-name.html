@@ -26,19 +26,37 @@
         // localStorage를 초기화하여 저장된 모든 데이터 제거
         localStorage.clear();
         document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('submit').addEventListener('click', function() {
-                inputValueChange();
-                console.log('Success!!');
-                location.href = 'start-3.html';
+            document.getElementById('submit').addEventListener('click', function(event) {
+                // 입력 값이 변경될 때 호출되는 함수
+                function inputValueChange() {
+                    let inputName = document.getElementById('input-name').value.trim();  // 공백 제거
+                    console.log(inputName);
+                    if (inputName) {
+                        localStorage.setItem("input-name", inputName);
+                        return true;  // 유효한 입력 값이 있을 때 true 반환
+                    } else {
+                        alert('이름을 입력해주세요.');  // 이름이 입력되지 않았을 경우 경고 메시지 표시
+                        return false;  // 유효한 입력 값이 없을 때 false 반환
+                    }
+                }
+
+                if (inputValueChange()) {
+                    console.log('Success!!');
+                    location.href = 'start-3.html';
+                } else {
+                    event.preventDefault();  // 이름이 입력되지 않았을 경우 페이지 이동을 막습니다.
+                }
+            });
+            // 드래그 방지
+            document.addEventListener('dragstart', function(event) {
+                event.preventDefault();
+            });
+
+            // 우클릭 방지
+            document.addEventListener('contextmenu', function(event) {
+                event.preventDefault();
             });
         });
-
-        // 입력 값이 변경될 때 호출되는 비동기 함수
-        function inputValueChange() {
-            let inputName = document.getElementById('input-name').value;
-            console.log(inputName);
-            localStorage.setItem("input-name", inputName);
-        }
     </script>
 </body>
 </html>
