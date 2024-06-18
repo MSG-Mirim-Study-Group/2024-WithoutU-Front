@@ -5,7 +5,7 @@ body {
 }
 main {
     height: 100vh;
-    background-color: rgba(199, 199, 199, 0.4);
+    background-color: rgba(120, 120, 120, 0.5);
     backdrop-filter: blur(3px);
 }
 p, a {
