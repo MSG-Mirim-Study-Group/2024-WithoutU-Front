@@ -1,12 +1,12 @@
 <?php
-header('Content-Type: application/json');
+header('Content-Type: application/json; charset=utf-8');
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 include('../api/connect.php');
-mysqli_set_charset($conn, "utf8mb4");  // 문자셋을 utf8mb4로 설정
+// mysqli_set_charset($conn, "utf8mb4");  // 문자셋을 utf8mb4로 설정
 
 $response = array();
 
