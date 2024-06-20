@@ -8,8 +8,8 @@ body {
 }
 main {
     height: 100vh;
-    background-color: rgba(238, 238, 238, 0.4); 
-    backdrop-filter: blur(12px);
+    background-color: rgba(200, 200, 200, 0.6); 
+    backdrop-filter: blur(10px);
 }
 /* 스크롤바 없애기 */
 ::-webkit-scrollbar {

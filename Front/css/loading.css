@@ -8,7 +8,6 @@ body {
     background-size: cover;  
 }
 
-
 .loading {
     background-color: rgba(197, 197, 197, 0.45);
     backdrop-filter: blur(3px);
@@ -23,7 +22,6 @@ body {
 .loading-title::before {
     content: "";
     position: absolute;
-    animation: animate 3s steps(5) infinite;
 }
 
 .loading-title {
@@ -33,16 +31,13 @@ body {
     1px 0 #666666,	       
     0 -1px #666666,
     2.3px 2px 1px #444444,
-    10px 2px 4px rgb(159,159,159,0.5);
+    10px 2px 4px rgba(159,159,159,0.5);
     color: white;
     margin-bottom: 20px;
     text-align: center;
     font-size: 120px;
     font-weight: 600;
     line-height: 1.3333;
-    animation-duration: 4000ms;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 .progress-bar {
@@ -50,7 +45,7 @@ body {
     width: 800px;
     height: 12px;
     border-radius: 100px;
-    background-color: rgb(192,24,24,0.2);
+    background-color: rgba(192,24,24,0.2);
     overflow: hidden;
 }
 
@@ -58,28 +53,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 20px;
-    height: 10px;
+    width: 0;
+    height: 100%;
     border-radius: 80px;
     background-color: #C01818;
-    animation-name: loading-bar;
-    animation-duration: 4000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
-}
-
-
-@keyframes loading-bar {
-    0% {
-        width: 0;
-        opacity: 1;
-    }
-    80% {
-        width: 100%;
-        opacity: 1;
-    }
-    100% {
-        width: 100%;
-        opacity: 0;
-    }
 }
