@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
             index++;
             setTimeout(displayNextCharacter, 150);
         } else {
-            setTimeout(redirectToResultPage, 1000); // 1초 대기 후 결과 페이지로 이동
+            setTimeout(redirectToResultPage, 750); // 1초 대기 후 결과 페이지로 이동
         }
     }
 
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 width++;
                 progressBarGauge.style.width = width + '%';
             }
-        }, 15); // 15ms마다 width를 1씩 증가
+        }, 30); // 15ms마다 width를 1씩 증가
     }
 
     displayNextCharacter();
